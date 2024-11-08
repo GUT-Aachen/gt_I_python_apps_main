@@ -16,8 +16,10 @@ body {
 
 /* Logo styling */
 .logo {
-    width: 200px;
+    width:400px;
+    height: auto;
     margin-bottom: 20px;
+    min-width: 120px;  /* Prevent the logo from becoming too small */
 }
 
 /* Header styling */
@@ -35,7 +37,7 @@ h1 {
 /* Widget container */
 .widget-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -48,7 +50,8 @@ h1 {
     border: 2px solid #007BFF;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 400px;
+    height: 400px;
     background-color: #cbd6e0;
     text-align: center;
     cursor: pointer;
