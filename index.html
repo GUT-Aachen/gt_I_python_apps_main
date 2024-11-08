@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soil Analysis Portal</title>
+
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="assets/favicon.ico">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
         }
+        /* Logo styling */
+        .logo {
+            width: 200px;  /* Adjust as needed */
+            margin-bottom: 30px;
+        }
+        /* Widget styling */
         .widget {
             display: inline-block;
             border: 2px solid #007BFF;
@@ -19,6 +29,7 @@
             cursor: pointer;
             background-color: #cbd6e0;
             margin: 10px;
+            width: 250px;
         }
         .widget h3 {
             margin: 0;
@@ -28,21 +39,33 @@
             margin-top: 5px;
             color: #bd9393;
         }
+        /* Image in widget styling */
+        .widget img {
+            width: 80%;  /* Adjust size as needed */
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
+    <!-- Logo at the top of the page -->
+    <img src="assets/logo.png" alt="Soil Analysis Portal Logo" class="logo">
+
     <h1>Welcome to Soil Analysis Portal</h1>
 
     <div>
+        <!-- Water in Soils Widget -->
         <a href="https://water-in-soils.onrender.com" target="_blank">
             <div class="widget">
+                <img src="assets/water-in-soils-icon.png" alt="Water in Soils Icon">
                 <h3>Water in Soils</h3>
                 <p>Click to explore soil water analysis.</p>
             </div>
         </a>
 
+        <!-- Consolidation Widget -->
         <a href="https://consolidation.onrender.com" target="_blank">
             <div class="widget">
+                <img src="assets/consolidation-icon.png" alt="Consolidation Icon">
                 <h3>Consolidation</h3>
                 <p>Click to explore consolidation analysis.</p>
             </div>
