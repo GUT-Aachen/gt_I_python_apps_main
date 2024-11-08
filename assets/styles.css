@@ -5,38 +5,44 @@
     box-sizing: border-box;
 }
 
-/* Basic body styles */
+/* Body styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
     color: #333;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 /* Logo styling */
 .logo {
-    width: 200px; /* Adjust as needed */
-    margin-bottom: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 40px;
 }
 
 /* Main heading styling */
 h1 {
     font-size: 2.5em;
     color: #007BFF;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-/* Widget container styling */
+/* Widget container */
 .widget-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
 }
 
-/* Widget card styling */
+/* Widget styling */
 .widget {
     display: inline-block;
     border: 2px solid #007BFF;
@@ -71,13 +77,46 @@ h1 {
 
 /* Widget image styling */
 .widget img {
-    width: 80%; /* Adjust size as needed */
+    width: 80%;
     margin-bottom: 15px;
     border-radius: 5px;
 }
 
-/* Link styling for the widgets */
-.widget a {
-    text-decoration: none;
-    color: inherit;
+/* Mobile-First Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .widget-container {
+        flex-direction: column;  /* Stack widgets vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .widget {
+        width: 100%;  /* Ensure widgets take full width on smaller screens */
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .widget h3 {
+        font-size: 1.2em;
+    }
+
+    .widget p {
+        font-size: 0.9em;
+    }
 }
