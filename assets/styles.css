@@ -11,17 +11,12 @@ body {
     background-color: #f7f7f7;
     color: #333;
     text-align: center;
-    padding: 0;
-    height: 100vh; /* Ensure body takes up the full height of the viewport */
-    overflow: hidden; /* Prevent scrolling */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Space out the header and the main content */
+    padding: 10px;
 }
 
 /* Logo styling */
 .logo {
-    width: 400px;
+    width:400px;
     height: auto;
     margin-bottom: 20px;
     min-width: 120px;  /* Prevent the logo from becoming too small */
@@ -29,7 +24,7 @@ body {
 
 /* Header styling */
 header {
-    margin-bottom: 20px; /* Reduce margin to fit content better */
+    margin-bottom: 40px;
 }
 
 /* Main heading styling */
@@ -42,15 +37,11 @@ h1 {
 /* Widget container */
 .widget-container {
     display: flex;
-    justify-content: center; /* Center the widgets horizontally */
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 20px; /* Remove extra padding to fit within the screen */
-    flex-grow: 1; /* Allow the widget container to grow and take up remaining space */
-    margin-top: 20px; /* Add some spacing between header and widgets */
-    margin-bottom: 20px; /* Add spacing at the bottom */
-    overflow: hidden; /* Prevent overflow in the widget container */
+    padding: 20px;
 }
 
 /* Widget styling */
@@ -66,7 +57,6 @@ h1 {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Ensure the widgets do not shrink */
 }
 
 /* Widget hover effect */
@@ -110,7 +100,7 @@ h1 {
 
     .widget-container {
         flex-direction: column;  /* Stack widgets vertically on smaller screens */
-        padding: 0 10px;
+        padding: 10px;
     }
 
     .widget {
