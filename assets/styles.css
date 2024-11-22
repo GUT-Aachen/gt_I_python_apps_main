@@ -48,7 +48,7 @@ h1 {
     gap: 20px;
     padding: 0 20px; /* Remove extra padding to fit within the screen */
     flex-grow: 1; /* Allow the widget container to grow and take up remaining space */
-    margin-top: 20px; /* Add some spacing between header and widgets */
+    margin-top: 10; /* Add some spacing between header and widgets */
     margin-bottom: 20px; /* Add spacing at the bottom */
     overflow: hidden; /* Prevent overflow in the widget container */
 }
