@@ -43,7 +43,7 @@ h1 {
 .widget-container {
     display: flex;
     justify-content: center; /* Center the widgets horizontally */
-    align-items: center;
+    align-items: left;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px; /* Remove extra padding to fit within the screen */
