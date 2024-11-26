@@ -12,7 +12,7 @@ body {
     color: #333;
     text-align: center;
     padding: 0;
-    height: 100vh; /* Ensure body takes up the full height of the viewport */
+
     overflow: hidden; /* Prevent scrolling */
     display: flex;
     flex-direction: column;
@@ -42,13 +42,13 @@ h1 {
 /* Widget container */
 .widget-container {
     display: flex;
-    justify-content: center; /* Center the widgets horizontally */
+    justify-content: left; /* Center the widgets horizontally */
     align-items: left;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px; /* Remove extra padding to fit within the screen */
     flex-grow: 1; /* Allow the widget container to grow and take up remaining space */
-    margin-top: 10%; /* Add some spacing between header and widgets */
+    margin-top: 2%; /* Add some spacing between header and widgets */
     margin-bottom: 20px; /* Add spacing at the bottom */
     overflow: hidden; /* Prevent overflow in the widget container */
 }
@@ -90,8 +90,8 @@ h1 {
 
 /* Widget image styling */
 .widget img {
-    width: 60%;  /* Adjusted to ensure it fits well inside the widget */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;  /* Adjusted to ensure it fits well inside the widget */
+    height: 80%; /* Maintain aspect ratio */
     max-width: 100%; /* Ensure it doesn't exceed the widget width */
     margin-bottom: 15px;
     border-radius: 5px;
