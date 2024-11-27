@@ -44,7 +44,7 @@ h1 {
     align-items: left;
     flex-wrap: wrap;
     gap: 2%;
-    /* padding: 0 1%; Remove extra padding to fit within the screen */
+    padding: 0 1%; 
     flex-grow: 1; /* Allow the widget container to grow and take up remaining space */
     margin-top: 2%; /* Add some spacing between header and widgets */
     margin-bottom:2%; /* Add spacing at the bottom */
