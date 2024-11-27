@@ -19,22 +19,22 @@ body {
 
 /* Logo styling */
 .logo {
-    width: 400px;
+    width: 25%;
     height: auto;
-    margin-bottom: 20px;
-    min-width: 120px;  /* Prevent the logo from becoming too small */
+    margin-bottom: 2%;
+    min-width: 250px;  /* Prevent the logo from becoming too small */
 }
 
 /* Header styling */
-header {
-    margin-bottom: 20px; /* Reduce margin to fit content better */
+.header {
+    margin-bottom: 1%; /* Reduce margin to fit content better */
 }
 
 /* Main heading styling */
 h1 {
     font-size: 2.5em;
     color: #007BFF;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 
 /* Widget container */
@@ -43,11 +43,11 @@ h1 {
     justify-content: left; /* Center the widgets horizontally */
     align-items: left;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 20px; /* Remove extra padding to fit within the screen */
+    gap: 2%;
+    /* padding: 0 1%; Remove extra padding to fit within the screen */
     flex-grow: 1; /* Allow the widget container to grow and take up remaining space */
     margin-top: 2%; /* Add some spacing between header and widgets */
-    margin-bottom: 20px; /* Add spacing at the bottom */
+    margin-bottom:2%; /* Add spacing at the bottom */
 }
 
 /* Widget styling */
@@ -55,7 +55,7 @@ h1 {
     display: inline-block;
     border: 2px solid #007BFF;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5%;
     width: 400px;
     height: 400px;
     background-color: #cbd6e0;
@@ -76,7 +76,7 @@ h1 {
 /* Widget title styling */
 .widget h3 {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 /* Widget description styling */
@@ -90,11 +90,12 @@ h1 {
     width: 80%;  /* Adjusted to ensure it fits well inside the widget */
     height: 80%; /* Maintain aspect ratio */
     max-width: 100%; /* Ensure it doesn't exceed the widget width */
-    margin-bottom: 15px;
-    border-radius: 5px;
+    margin-bottom: 1%;
+    border-radius: 1%;
     object-fit: contain; /* Ensures image fits inside the widget without being stretched */
 }
 
+/* Mobile-First Media Queries */
 /* Mobile-First Media Queries */
 @media (max-width: 768px) {
     h1 {
@@ -102,22 +103,21 @@ h1 {
     }
 
     .logo {
-        width: 150px;
+        width: 40%;
     }
 
     .widget-container {
-        flex-direction: column;  /* Stack widgets vertically on smaller screens */
-        padding: 0 10px;
+        flex-direction: column; /* Stack widgets vertically */
+        padding: 0 5%;
     }
 
     .widget {
-        width: 100%;  /* Ensure widgets take full width on smaller screens */
-        margin-bottom: 15px;
-        height: auto;  /* Allow height to adjust for mobile */
+        width: 90%; /* Widgets take nearly full width */
+        margin-bottom: 5%;
     }
 
     .widget img {
-        width: 70%; /* Adjust image size on mobile */
+        width: 70%;
     }
 }
 
@@ -127,7 +127,7 @@ h1 {
     }
 
     .logo {
-        width: 120px;
+        width: 50%;
     }
 
     .widget h3 {
@@ -139,6 +139,6 @@ h1 {
     }
 
     .widget img {
-        width: 80%; /* Increase image size on smaller screens */
+        width: 80%;
     }
 }
