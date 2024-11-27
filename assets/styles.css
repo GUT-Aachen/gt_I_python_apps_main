@@ -12,8 +12,6 @@ body {
     color: #333;
     text-align: center;
     padding: 0;
-
-    overflow: hidden; /* Prevent scrolling */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Space out the header and the main content */
@@ -50,7 +48,6 @@ h1 {
     flex-grow: 1; /* Allow the widget container to grow and take up remaining space */
     margin-top: 2%; /* Add some spacing between header and widgets */
     margin-bottom: 20px; /* Add spacing at the bottom */
-    overflow: hidden; /* Prevent overflow in the widget container */
 }
 
 /* Widget styling */
